@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,800;1,400;1,600&display=swap');
 
 * {
@@ -29,9 +30,22 @@ margin-bottom: .5em;
 li{
   list-style-type: none;
 }
+
 .container{
-  width: 75em;
+  width: 80%;
 }
+
+.navbar{
+  padding-top: 1.67em;
+  display: flex;
+  font-size: 30px;
+  list-style-type: none;
+  
+  }
+  .navbar a{
+    text-decoration: none;
+  }
+  
 
 .clearfix::after{
 	content: "";
@@ -46,17 +60,6 @@ main p{
 a::before{
 content: attr(title);
 position: absolute;
-
-}
-.navbar{
-padding-top: 1.67em;
-display: flex;
-font-size: 30px;
-list-style-type: none;
-
-}
-.navbar a{
-  text-decoration: none;
 }
 
 .description{
@@ -188,3 +191,69 @@ input:focus{
   transition: 4s ease-out;
 }
 
+@media screen and (max-width: 1064px) {
+  
+.mainInfo{
+  padding-bottom: 27px;
+}
+
+h1{
+  font-size: 2.8em;
+}
+
+input{
+  height: 2.5em;
+  font-size: 2em;
+  width: 60%;
+}
+
+.weather{
+  padding-top: 1  25px;
+}
+
+.weather{
+  padding-left: 50%;
+}
+
+}
+
+@media screen and (max-width:640px){
+h1{
+  font-size: 1.4em;
+}
+
+input{
+    width: 100%;
+    font-size: .8em;
+    padding-left: 5%;
+}
+
+.mainInfo{
+width: 100%;
+}
+
+.mainInfo li:first-child{
+  padding-bottom: 0.14em;
+}
+
+.weather{
+  padding-top: 5em;
+  padding-bottom: 1.15em;
+  padding-left: 15%;
+  background-position: bottom;
+}
+  
+.navbar{
+  display: block;
+  font-size: 1.45em;
+}
+
+.navbar li{
+  padding-bottom: 1em;
+}
+
+.navbar li a:nth-last-child(){
+  padding-bottom: 0;
+}
+
+}
